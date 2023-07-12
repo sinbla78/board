@@ -1,0 +1,5 @@
+<select id = "getUserByEmail" resultType = "helloworld.vo.UserVo">
+    SELECT *
+    FROM User
+    WHERE email = #{email}
+</select>
