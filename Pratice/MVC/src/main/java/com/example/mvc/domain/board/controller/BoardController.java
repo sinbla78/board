@@ -4,8 +4,7 @@ import com.example.mvc.domain.board.dto.request.BoardRequest;
 import com.example.mvc.domain.board.dto.response.BoardResponse;
 import com.example.mvc.domain.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 

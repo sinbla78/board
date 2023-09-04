@@ -1,4 +1,8 @@
 server:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
   port: 8089
 spring:
   mail:
@@ -18,8 +22,9 @@ spring:
     username: root
     password: "0000"
     driver-class-name: com.mysql.cj.jdbc.Driver
+
 mybatis:
-  # mapper 경로 지정
-  mapper-locations: query/**/*.xml
-  configuration:
-    map-underscore-to-camel-case: true
+  mapper-locations: mapper/**/*.xml
+
+logging:
+  config: classpath:logback-local.xml
