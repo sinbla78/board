@@ -39,6 +39,7 @@ public class Article {
     @CreatedDate
     @Column(nullable = false)
     private LocalDateTime createdAt; // 생성 일시
+
     @CreatedBy
     @Column(nullable = false, length = 100)
     private String createdBy; // 생성자
